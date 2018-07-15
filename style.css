@@ -23,60 +23,97 @@ body {
 
 .wrapper header {
   width: 100%;
-  height: 104px;
-  box-sizing: border-box;
+  height: 100%;
 }
-.wrapper header .menulink {
+.wrapper header .header-top {
+  width: 30%;
+  float: left;
+  margin-right: 5%;
+}
+@media only screen and (max-width: 1200px) {
+  .wrapper header .header-top {
+    width: 80%;
+    float: left;
+    margin-right: 0;
+    padding-left: 15px;
+  }
+}
+.wrapper header .header-top ul {
   list-style-type: none;
-  margin: 0;
   padding: 0;
+  margin: 0;
+}
+.wrapper header .header-top ul li {
   float: left;
 }
-.wrapper header .menulink li {
-  float: left;
-}
-.wrapper header .menulink li a {
-  display: block;
+.wrapper header .header-top ul li a {
   font-size: 14px;
-  color: #3f3f3f;
-  padding: 46px 30px 41px 0;
-  text-decoration: none;
-  transition: .4s;
-}
-.wrapper header .menulink li a:hover {
-  color: blue;
-  font-weight: bold;
-}
-.wrapper header .logo {
   display: block;
+  color: #3f3f3f;
+  padding: 49px 25px 36px 0;
+  text-decoration: none;
 }
-.wrapper header .logo img {
-  margin-top: 5px !important;
-}
-.wrapper header .menu {
-  background: gray;
+.wrapper header .header-banner {
+  width: 30%;
+  height: 100px;
+  float: left;
+  margin-right: 5%;
+  box-sizing: border-box;
   position: relative;
 }
-.wrapper header .menu a {
-  position: absolute;
-  float: right;
-  display: block;
-  font-size: 14px;
-  color: #30373b;
-  padding: 46px 0 42px 0;
-  right: 63px;
-  text-decoration: none;
+@media only screen and (max-width: 1200px) {
+  .wrapper header .header-banner {
+    float: left;
+    width: 20%;
+    margin-right: 0px;
+  }
 }
-.wrapper header .menu img {
+.wrapper header .header-banner img.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media only screen and (max-width: 1200px) {
+  .wrapper header .header-banner img.logo {
+    width: 45px;
+    height: 45px;
+  }
+}
+.wrapper header .header-bottom {
+  width: 30%;
+  float: left;
+}
+@media only screen and (max-width: 1200px) {
+  .wrapper header .header-bottom {
+    width: 100%;
+    margin-bottom: 28px;
+  }
+}
+.wrapper header .header-bottom .section-box {
+  display: inline-block;
   float: right;
-  right: 0;
-  margin: 29px 0 31px 0;
+  margin-top: 29px;
+}
+@media only screen and (max-width: 1200px) {
+  .wrapper header .header-bottom .section-box {
+    display: block;
+    float: none;
+    margin: auto;
+    text-align: center;
+  }
+}
+.wrapper header .header-bottom .section-box a {
+  text-decoration: none;
+  color: #3f3f3f;
+}
+.wrapper header .header-bottom .section-box img {
+  padding-left: 15px;
 }
 .wrapper .banner {
   width: 100%;
   height: auto;
   display: block;
-  background: yellow;
   position: relative;
 }
 .wrapper .banner .carousel-item .textSlide {
